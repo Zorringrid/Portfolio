@@ -10,13 +10,13 @@ body {
   /* background: black; */
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  color: white;
+  color: rgb(138, 138, 138);
 }
 .top-header {
   position: fixed;
   width: 100%;
-  height: 10%;
-  background: rgba(0, 0, 0, 0.565); /* estilo Sony */
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.384); /* estilo Sony */
   display: flex;
   align-items: center;
   z-index: 1000;
@@ -39,7 +39,7 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: rgb(138, 138, 138);
   text-decoration: none;
   margin-right: 20px;
   font-size: 16px;
@@ -61,7 +61,7 @@ body {
   margin-right: 5%;
 }
 .social a {
-  color: white;
+  color: rgb(138, 138, 138);
   font-size: xx-large;
 }
 #menu-toggle {
@@ -73,12 +73,72 @@ body {
   font-size: 32px;
   padding: 20px;
   cursor: pointer;
-  color: white;
+  color: rgb(138, 138, 138);
+}
+
+.banner {
+  background-color: #f3b5caa7;
+  height: 90vh;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-right {
+  height: 100%;
+  width: 75%;
+  position: relative;
+}
+.photobanner {
+  background-image: url(img/fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+  margin-left: 10%;
+}
+.me {
+  background-image: url(img/yo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+.presentation {
+  margin: 5%;
+  margin-left: 0;
+}
+.name {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #fcfcfc;
+  letter-spacing: 10px;
+  font-size: clamp(40px, 6vw, 80px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i {
+  animation: change 5s infinite;
+}
+@keyframes change {
+  50% {
+    font-family: "Rubik Maze", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 @media (width <= 768px) {
   /* Mostrar hamburguesa */
   .hamburger {
-    display: block;
+    display: inline-block;
   }
 
   /* Ocultar menú por defecto */
@@ -119,5 +179,20 @@ body {
     padding: 3%;
     margin: 5%;
     height: 70%;
+  }
+  .banner {
+    display: block;
+  }
+  .banner-right {
+    height: 60%;
+    width: 100%;
+    position: relative;
+  }
+  .me {
+    width: 50%;
+    height: 80%;
+  }
+  .presentation {
+    margin: 5%;
   }
 }
