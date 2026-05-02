@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  /* background: black; */
+  background: #f3b5caa7;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: rgb(138, 138, 138);
@@ -30,6 +30,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
   width: 5%;
   height: 100%;
 }
@@ -75,43 +76,46 @@ body {
   cursor: pointer;
   color: rgb(138, 138, 138);
 }
-
+.container {
+  margin: 0 auto;
+}
 .banner {
   background-color: #f3b5caa7;
   height: 90vh;
   padding-top: 10vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 60% 40%;
   align-items: center;
+  position: relative;
 }
 .banner-right {
   height: 100%;
-  width: 75%;
-  position: relative;
+  width: 100%;
 }
 .photobanner {
-  background-image: url(img/fondo.png);
+  background-image: url(img/codigo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 60%;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .me {
   background-image: url(img/yo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 40%;
-  height: 80%;
+  width: 25%;
+  height: 70%;
   position: absolute;
-  top: 10%;
-  left: 40%;
+  top: 13%;
+  left: 30%;
 }
-.presentation {
-  margin: 5%;
-  margin-left: 0;
+.nameposition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .name {
   font-family: "Rubik Doodle Shadow", system-ui;
@@ -120,13 +124,23 @@ body {
   color: #fcfcfc;
   letter-spacing: 10px;
   font-size: clamp(40px, 6vw, 80px);
-  text-align: center;
+  text-align: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 .i {
   animation: change 5s infinite;
+}
+.dam {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: clamp(10px, 6vw, 20px);
+  text-align: left;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 @keyframes change {
   50% {
@@ -181,18 +195,37 @@ body {
     height: 70%;
   }
   .banner {
-    display: block;
-  }
-  .banner-right {
-    height: 60%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 100%;
-    position: relative;
+    padding-top: 10vh;
   }
+
+  .photobanner {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+  }
+
   .me {
     width: 50%;
-    height: 80%;
+    height: 30%;
+    left: 25%;
   }
-  .presentation {
-    margin: 5%;
+
+  .nameposition {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+  }
+  .name {
+    justify-content: center;
+    align-items: center;
+  }
+  .dam {
+    margin-top: 10%;
+    text-align: center;
   }
 }
