@@ -193,9 +193,38 @@ body {
   margin-left: 2%;
   width: 70%;
 }
+.skills {
+  background-color: #f3b5caa7;
+  height: auto;
+  padding: 5%;
+}
 #skills h3 {
   margin-left: 2%;
 }
+.icons {
+  margin: 2%;
+  font-size: clamp(40px, 6vw, 120px);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+}
+.icon p {
+  font-size: clamp(10px, 6vw, 20px);
+  color: rgb(138, 138, 138);
+  text-align: center;
+  margin-top: 3%;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
 @media (width <= 768px) {
   html,
   body {
