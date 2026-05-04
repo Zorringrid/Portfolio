@@ -181,9 +181,13 @@ body {
 }
 .img-aboutme {
   background-image: url(img/Copilot_20260504_130744.png);
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+
   max-width: 1200px;
   height: 90vh;
   margin-left: 2%;
