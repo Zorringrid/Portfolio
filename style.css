@@ -181,9 +181,6 @@ body {
 }
 .img-aboutme {
   background-image: url(img/Copilot_20260504_130744.png);
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -195,14 +192,14 @@ body {
 }
 .skills {
   background-color: #f3b5caa7;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-#skills h3 {
-  margin-left: 2%;
-  margin-bottom: 3%;
+#skills {
+  scroll-margin-top: 20px;
 }
 .icons {
-  margin: 2%;
+  padding: 5%;
   font-size: clamp(40px, 6vw, 120px);
   color: white;
   display: grid;
@@ -224,7 +221,57 @@ body {
   align-items: center;
   margin: 1%;
 }
+#project {
+  margin-top: 3%;
+  scroll-margin-top: 70px;
+}
+.project {
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
 
+.project-target {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #f3b5caa7;
+  margin: 3%;
+  border-radius: 10px;
+  padding-bottom: 4%;
+}
+.imgHotel {
+  background-image: url(img/InicioHotel.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 48vh;
+  width: 100%;
+  border-radius: 10px;
+}
+.imgruleta {
+  background-image: url(img/Ruleta.jpeg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 48vh;
+  width: 100%;
+  border-radius: 10px;
+}
+.imgvideojuego {
+  background-image: url(img/virtualliance.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 48vh;
+  width: 100%;
+  border-radius: 10px;
+}
 @media (width <= 768px) {
   html,
   body {
@@ -343,5 +390,8 @@ body {
     padding-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .project {
+    display: inline-block;
   }
 }
