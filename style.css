@@ -137,17 +137,54 @@ body {
   line-height: 1.5;
   font-size: clamp(10px, 6vw, 20px);
   text-align: left;
-  margin: 5%;
+  margin-right: 4%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 @keyframes change {
   50% {
     font-family: "Rubik Maze", system-ui;
     font-weight: 400;
     font-style: normal;
   }
+}
+.aboutme {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+.aboutmetextcontainer {
+  width: 60%;
+}
+.title {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #fcfcfc;
+  font-size: clamp(30px, 6vw, 40px);
+  margin-left: 5%;
+}
+
+.aboutmep {
+  width: 100%;
+  margin: 5%;
+  font-size: clamp(20px, 6vw, 25px);
+  text-align: justify;
+  margin-bottom: 3%;
+}
+.img-aboutme {
+  background-image: url(img/Copilot_20260504_130744.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1200px;
+  height: 90vh;
+  margin-left: 2%;
+  width: 70%;
 }
 @media (width <= 768px) {
   /* Mostrar hamburguesa */
@@ -200,6 +237,7 @@ body {
     height: auto;
     width: 100%;
     padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 
   .photobanner {
@@ -227,5 +265,29 @@ body {
   .dam {
     margin-top: 10%;
     text-align: center;
+  }
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding-top: 10vh;
+    align-items: center;
+  }
+  .aboutmetextcontainer {
+    width: 100%;
+  }
+  .aboutmep {
+    margin: 5%;
+    margin-bottom: 10%;
+    width: 85%;
+  }
+  .aboutmep:last-child {
+    margin-bottom: 0;
+  }
+  .img-aboutme {
+    margin: 5%;
+    width: 100%;
+    height: 50vh;
   }
 }
