@@ -288,6 +288,7 @@ body {
     width: 100%;
     padding-top: 10vh;
     align-items: center;
+    margin-bottom: 0%;
   }
   .aboutmetextcontainer {
     width: 100%;
@@ -301,7 +302,6 @@ body {
     margin-bottom: 0;
   }
   .img-aboutme {
-    margin: 5%;
     width: 100%;
     height: 50vh;
   }
