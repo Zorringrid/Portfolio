@@ -429,6 +429,7 @@ body {
 
 .gallery img {
   width: 100%;
+  max-height: 350px;
   border-radius: 10px;
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -437,6 +438,10 @@ body {
 .gallery img:hover {
   transform: scale(1.03);
 }
+.gallery img.vertical {
+  object-fit: contain;
+  max-height: 300px;
+}
 .photo {
   display: flex;
   flex-direction: column;
@@ -444,20 +449,34 @@ body {
   align-items: center;
   gap: 20px;
 }
+.videoscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: clamp(20px, 6vw, 30px);
+}
 
 #videos {
   scroll-margin-top: 70px;
 }
 .video {
+  width: 60%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+  aspect-ratio: 16/9;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+}
+.video iframe {
   width: 100%;
   aspect-ratio: 16/9;
   border: none;
-  height: 50vh;
-  margin-top: 3%;
-  margin-right: 3%;
-  margin-left: 3%;
 }
 .last-footer {
   width: 100%;
