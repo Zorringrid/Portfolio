@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotelSol</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=Rubik+Maze&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">
+        <a href="index.html"></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">☰</label>
+      <nav class="menu">
+        <a href="#aboutproject">Sobre el proyecto</a>
+        <a href="#funtion">Funciones</a>
+        <a href="#tecnologias">Tecnoligas</a>
+        <a href="#photos">fotos</a>
+        <a href="#video">videos</a>
+        <ul class="mobile-social">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ingrid-diaz-risso"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Zorringrid" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li>
+          <a href="https://www.linkedin.com/in/ingrid-diaz-risso"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Zorringrid"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <header class="header-project" id="Ruleta">
+      <div class="background-image-project">
+        <h2 class="title title-project">RULETA EUROPEA</h2>
+        <h3 class="title subtitle-project">Juego móvil estilo casino</h3>
+        <div class="project-p">
+          <p>Proyecto académico desarrollado por el equipo Native Coders</p>
+          <p>Firebase · Firestore · Retrofit · Moshi · Android Studio</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="aboutproject" id="aboutproject">
+      <h3 class="title">Sobre el proyecto</h3>
+      <p>
+        Ruleta Europea es una aplicación móvil desarrollada en Android Studio
+        como parte del curso
+        <em>“Desarrollo de aplicaciones móviles nativas”</em> de la Universitat
+        Oberta de Catalunya (UOC). El proyecto evoluciona desde una ruleta local
+        hasta un sistema multijugador conectado mediante Firebase, incorporando
+        autenticación con Google, ranking global, jackpot compartido, música,
+        animaciones, capturas de pantalla, notificaciones y eventos en el
+        calendario.
+      </p>
+    </div>
+
+    <div class="description-objective">
+      <div class="description">
+        <h3 class="title">Descripción general</h3>
+        <p>
+          La aplicación simula una ruleta europea real con apuestas, animaciones
+          y sonido. Los jugadores pueden iniciar sesión con Google, competir por
+          el Top 10 global, acumular un premio común y registrar sus victorias
+          en el calendario del dispositivo.
+        </p>
+      </div>
+
+      <div class="objective">
+        <h3 class="title">Objetivo académico</h3>
+        <ul>
+          <li>Integración con Firebase Authentication</li>
+          <li>Persistencia en Firestore</li>
+          <li>Uso de Retrofit + Moshi</li>
+          <li>Multimedia: música, animaciones y sonido</li>
+          <li>Notificaciones y calendario</li>
+          <li>Localización del jugador</li>
+          <li>Arquitectura escalable</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="title" id="funtion">Funcionalidades principales</h3>
+    <div class="funtion">
+      <div class="target_funtion">
+        <h4 class="tilte">Autenticación</h4>
+        <ul>
+          <li>Inicio de sesión con Google</li>
+          <li>Identificación única por UID</li>
+        </ul>
+      </div>
+
+      <div class="target_funtion">
+        <h4 class="tilte">Ruleta y apuestas</h4>
+        <ul>
+          <li>Animación de giro</li>
+          <li>Sonido de fichas</li>
+          <li>Apuestas múltiples</li>
+        </ul>
+      </div>
+
+      <div class="target_funtion">
+        <h4 class="tilte">Ranking global</h4>
+        <ul>
+          <li>Top 10 en tiempo real</li>
+          <li>Actualización mediante REST</li>
+          <li>Procesado con Moshi</li>
+        </ul>
+      </div>
+
+      <div class="target_funtion">
+        <h4 class="tilte">Jackpot compartido</h4>
+        <ul>
+          <li>Premio común acumulable</li>
+          <li>Incrementos atómicos</li>
+          <li>Sincronización en tiempo real</li>
+        </ul>
+      </div>
+
+      <div class="target_funtion">
+        <h4 class="tilte">Multimedia</h4>
+        <ul>
+          <li>Música seleccionable</li>
+          <li>Animaciones de fichas</li>
+          <li>Sonidos personalizados</li>
+        </ul>
+      </div>
+
+      <div class="target_funtion">
+        <h4 class="tilte">Extras</h4>
+        <ul>
+          <li>Capturas de pantalla</li>
+          <li>Eventos en el calendario</li>
+          <li>Notificaciones de victoria</li>
+          <li>WebView de ayuda</li>
+          <li>Localización del jugador</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tecnologias">
+      <h3 class="title" id="tecnologias">Tecnologías utilizadas</h3>
+      <div class="icons">
+        <div class="icon">
+          <i class="fa-brands fa-android"></i>
+          <p>Android Studio</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-brands fa-google"></i>
+          <p>Firebase Auth</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-database"></i>
+          <p>Firestore</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-code"></i>
+          <p>Kotlin</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-network-wired"></i>
+          <p>Retrofit</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-file-code"></i>
+          <p>Moshi</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-bell"></i>
+          <p>Notificaciones</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-calendar"></i>
+          <p>Google Calendar</p>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Localización</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="photos">
+      <h3 class="title" id="photos">Fotos</h3>
+      <div class="gallery">
+        <div class="photo">
+          <img src="img/Ruleta.jpeg" alt="Login" />
+          <h4>Pantalla de inicio de sesión</h4>
+        </div>
+
+        <div class="photo">
+          <img src="img/menuruleta.jpg" alt="Menú" />
+          <h4>Menú principal</h4>
+        </div>
+
+        <div class="photo">
+          <img src="img/apuesta.jpeg" alt="Tablero" />
+          <h4>Tablero de apuestas</h4>
+        </div>
+        <div class="photo">
+          <img src="img/ruletagirando.png" alt="Ruleta griando" />
+          <h4>Ruleta girando</h4>
+        </div>
+        <div class="photo">
+          <img src="img/ranking.jpeg" alt="Ranking" />
+          <h4>Ranking global</h4>
+        </div>
+        <div class="photo">
+          <img src="img/vicotria.jpg" alt="Victoria" />
+          <h4>Pantalla de victoria</h4>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class="title" id="video">Video</h3>
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/SUjVfY0IXBE?si=o3rdqECIvcZ6-pnp"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <footer class="last-footer">
+      Copyrihgt &copy; | Ingrid Diaz Risso | Proyecto IronHack
+    </footer>
+  </body>
+</html>
