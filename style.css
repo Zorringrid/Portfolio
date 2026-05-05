@@ -620,4 +620,7 @@ body {
     flex-direction: column;
     gap: 20px;
   }
+  .video {
+    width: 80%;
+  }
 }
