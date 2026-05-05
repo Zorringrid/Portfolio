@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotelSol</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=Rubik+Maze&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">
+        <a href="index.html"></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">☰</label>
+      <nav class="menu">
+        <a href="#aboutproject">Sobre el proyecto</a>       
+        <a href="#funtion">Funciones</a>
+        <a href="#tecnologias">Tecnoligas</a>
+        <a href="#photos">fotos</a>
+        <ul class="mobile-social">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ingrid-diaz-risso"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Zorringrid" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+    </header>
+    <header class="header-project" id="HotelSol">
+      <div class="background-image-project">
+        <h2 class="title title-project">HOTEL SOL</h2>
+        <h3 class="title subtitle-project">Sistema de Gestión Hotelera</h3> 
+        <div class="project-p"><p >
+          Proyecto académico desarrollado por el grupo DesArrollados
+        </p>
+        <p>
+          .NET · SQL Server · XML · Arquitectura por capas · Integración con
+          Odoo</p>
+        </p></div>
+      </div>
+     
+    </header>
+    <div class="aboutproject" id="aboutproject">
+      <h3 class="title" >Sobre el proyecto</h3>
+      <p>Aplicación de escritorio desarrollada en <strong>C# (.NET / WinForms)</strong> como parte del curso académico
+        <em>“Técnicas de persistencia de datos con .NET y programas ERP”</em> de la Universitat Oberta de Catalunya (UOC).
+        
+        Hotel SOL es una aplicación de gestión hotelera diseñada para dar soporte a las operaciones internas de un hotel real: administración de usuarios, gestión de habitaciones, control de reservas, check-in/check-out y solicitud de servicios adicionales.
+        El proyecto fue desarrollado por el equipo DesArrollados como parte de un portafolio profesional.
+        Incluye arquitectura por capas, persistencia de datos mediante ADO.NET, exportación en XML e integración con el ERP Odoo mediante Python.</p>
+    </div>
+    <div class="description-objective">
+      <div class="description">
+        <h3 class="title">Descripción general</h3>
+        <p>Hotel SOL simula el funcionamiento interno de un hotel desde el punto de vista de la gestión operativa.
+          Permite administrar usuarios con distintos roles (Administrador, Recepcionista y Cliente), gestionar habitaciones con precios variables según temporada, registrar reservas, realizar check-in/check-out y gestionar servicios adicionales.</p>
+      </div>
+      <div class="objective">
+        <h3 class="title">objetivo académico</h3>
+        <ul>
+          <li>Uso de <strong> arquitectura en capas</strong>.</li>
+          <li>Persistencia de datos con <strong>ADO.NET</strong>.</li>
+          <li>Separación de responsabilidades mediante <strong>DAO</strong>.</li>
+          <li>Trabajo con bases de datos <strong>SQL Server</strong></li>
+          <li>Integración con un ERP externo <stro>(Odoo)</stro>-</li>
+          <li>Intercambio de datos mediante <strong>XML</strong>.</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="title" id="funtion">Funcionalidades principales</h3>
+    <div class="funtion">
+      <div class="target_funtion">
+        <h4 class="tilte"> Sistema de inicio de sesión</h4>
+        <ul>
+          <li>Validación de credenciales</li>
+          <li>Roles con permisos diferenciados</li>
+          <li>Acceso restringido según tipo de usuario</li>
+        </ul>
+      </div>
+      <div class="target_funtion">
+        <h4 class="tilte"> Gestión de usuarios</h4>
+        <ul>
+          <li>Creación, edición y eliminación de usuarios</li>
+          <li>Roles: Administrador, Recepcionista, Cliente</li>        
+        </ul>
+      </div>
+      <div class="target_funtion">
+        <h4 class="tilte"> Gestión de habitaciones</h4>
+        <ul>
+          <li>Precios dinámicos según temporada</li>
+          <li>Alta y modificación de habitaciones</li>
+          <li>Control de disponibilidad</li>        
+        </ul>
+      </div>
+      <div class="target_funtion">
+        <h4 class="tilte"> Gestión de reservas</h4>
+        <ul>
+          <li>Creación de reservas por parte del cliente</li>
+          <li>Control de ocupación</li>
+          <li>Registro de servicios adicionales</li>        
+        </ul>
+      </div>
+      <div class="target_funtion">
+        <h4 class="tilte"> Operativa del recepcionista</h4>
+        <ul>
+          <li>Check-in y check-out</li>
+          <li>Consulta de reservas activas</li>
+          <li>Registro de servicios consumidos</li>        
+        </ul>
+      </div>
+      <div class="target_funtion">
+        <h4 class="tilte"> Exportación y persistencia</h4>
+        <ul>
+          <li>Exportación de datos a XML</li>
+          <li>Persistencia completa en SQL Server</li>
+          <li>Carga inicial de datos tras la instalación</li>        
+        </ul>
+      </div> 
+      <div class="target_funtion">
+        <h4 class="tilte"> Integración con Odoo</h4>
+        <ul>
+          <li>Envío de datos del hotel hacia Odoo</li>
+          <li>Sincronización de habitaciones y reservas</li>
+          <li>Comunicación mediante Python y XML/API</li>        
+        </ul>
+      </div>                        
+    </div>
+    <div class="tecnologias">
+      <h3 class="title" id="tecnologias">tecnologias utilizadas</h3>
+      <div class="icons">
+        <div class="icon">
+          <i class="fa-brands fa-git-alt"></i>
+          <p>GIT</p>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-server"></i>
+          <p>SQL Server</p>
+        </div>
+        
+        <div class="icon">
+          <i class="fa-solid fa-code"></i>
+          <p>C#</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-layer-group"></i>
+            <p>.NET</p>
+        </div>
+        <div class="icon">
+          <i class="fa-regular fa-window-maximize"></i>
+          <p>Windows Forms</p>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-plug"></i>
+          <p>ADO.NET</p>
+        </div>
+        <div class="icon">
+          <i class="fa-regular fa-file-code"></i>
+          <p>XML</p>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-gears"></i>
+          <p>Odoo</p>
+        </div>
+      </div>
+    </div>
+    <div class="photos">
+      <h3 class="title" id="photos">Fotos</h3>
+      <div class="gallery">
+        <div class ="photo">
+          <img src="img/InicioHotel.png" alt="Pantalla 1">
+          <h4>Pantalla de inicio</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/registrohotel.png" alt="Pantalla 2">
+        <h4>Pantalla de registro</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/menuhotel.png" alt="Pantalla 3">
+        <h4>pantalla menu</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/gestionhabitaciones.png" alt="Pantalla 4">
+        <h4>Pantalla de gestion de habitaciones</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/reservas.png" alt="Pantalla 5">
+        <h4>Pantalla reservas</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/gestionreservas.png" alt="Pantalla 6">
+        <h4>Pantalla gestion reservas</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/servicios.png" alt="Pantalla 7">
+        <h4>Pantalla servicios</h4>
+        </div>
+        <div class ="photo">
+        <img src="img/factura.png" alt="Pantalla 7">
+        <h4>Pantalla factura</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
