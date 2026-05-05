@@ -314,7 +314,7 @@ body {
   padding: 40px 0px;
 }
 .title-project {
-  font-size: clamp(40px, 6vw, 80px);
+  font-size: clamp(35px, 6vw, 80px);
   text-align: center;
   color: rgb(138, 138, 138);
   padding-top: 10%;
@@ -327,6 +327,16 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-top: 10vh;
+}
+.repository {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.repository a {
+  color: rgb(138, 138, 138);
+  font-size: xx-large;
 }
 #aboutproject {
   scroll-margin-top: 75px;
