@@ -478,7 +478,7 @@ body {
   aspect-ratio: 16/9;
   border: none;
 }
-.button-header {
+.button-container {
   display: flex;
   justify-content: space-between;
   margin-right: 5%;
@@ -498,6 +498,9 @@ body {
   text-align: center;
   transition: color 100ms;
   text-transform: uppercase;
+  color: #ffffff;
+  gap: 40px;
+  font-size: clamp(5px, 4vw, 10px);
 }
 .button a {
   color: #ffffff;
@@ -511,6 +514,7 @@ body {
 .button:hover,
 .button:focus {
   background-color: #f082accb;
+  color: rgb(138, 138, 138);
 }
 
 .last-footer {
@@ -520,6 +524,51 @@ body {
   text-align: center;
   font-size: 10px;
 }
+#contact {
+  background-color: rgba(138, 138, 138, 0.401);
+  padding-top: 10vh;
+  margin: 0;
+  padding-left: 3%;
+  scroll-margin-top: 70px;
+}
+.form-container {
+  display: flex;
+  background-color: rgba(138, 138, 138, 0.401);
+}
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(138, 138, 138, 0.401);
+  padding: 5%;
+  color: white;
+  height: auto;
+  margin: 2%;
+  border-radius: 15px;
+}
+.form-contact label {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.form-contact input {
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  padding-left: 3%;
+}
+
+.form-contact textarea {
+  margin-bottom: 4%;
+  height: 87px;
+  resize: vertical;
+  border-radius: 5px;
+  padding-left: 3%;
+}
+.form-contact button {
+  height: 5vh;
+  width: 15vw;
+}
+
 @media (width <= 768px) {
   html,
   body {

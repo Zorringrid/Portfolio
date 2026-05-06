@@ -253,6 +253,51 @@
             <p>...</p>
           </div> -->
         </div>
+        <h3 class="title" id="contact">CONTACTO</h3>
+        <div class="form-container">
+          <form class="form-contact" action="formsend.html" method="GET">
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="ej: Maria Del Carmen"
+            />
+
+            <label for="email">*e-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="miemail@email.com"
+              required
+            />
+
+            <!-- campo de comentarios -->
+            <label for="message">Mensaje:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="maximo 170 caracteres"
+              cols="30"
+              rows="5"
+              maxlength="170"
+            ></textarea>
+
+            <!-- opcion 1 para submit (enviar conjunto de datos) 
+              <input type="submit" value="ENVIAR!">-->
+
+            <!-- BOTONES -->
+            <div class="button-container">
+              <!-- opcion 2 para submit es usar un botón (ventaja: innerHTML  ) -->
+              <button type="submit" class="button">ENVIAR!</button>
+              <!-- reset para borrarlo todo. CUIDADO! -->
+              <button type="reset" class="button">Borrar todo</button>
+            </div>
+            <small>* datos requeridos</small>
+          </form>
+        </div>
+        <div></div>
       </article>
       <footer class="last-footer">
         Copyrihgt &copy; | Ingrid Diaz Risso | Proyecto IronHack
