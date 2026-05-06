@@ -724,6 +724,9 @@ body {
   .video {
     width: 80%;
   }
+  .form-contact {
+    width: 90%;
+  }
   .button {
     width: auto;
     margin-top: 5%;
