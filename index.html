@@ -255,17 +255,33 @@
         </div>
 
         <div class="form-container">
-          <form class="form-contact" action="formsend.html" method="GET">
+          <form
+            class="form-contact"
+            action="https://formsubmit.co/f7738bd51561cf96309b168baa84497a"
+            method="POST"
+          >
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://albertiron2026.github.io/formulario-2-con-envio-email/recibido.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
             <h3 class="title" id="contact">CONTACTO</h3>
-            <label for="name">Nombre:</label>
+            <div class="required">
+              <h5>*</h5>
+              <label for="name">Nombre:</label>
+            </div>
             <input
               type="text"
               name="name"
               id="name"
               placeholder="ej: Maria Del Carmen"
             />
-
-            <label for="email">*e-mail:</label>
+            <div class="required">
+              <h5>*</h5>
+              <label for="email">e-mail:</label>
+            </div>
             <input
               type="email"
               name="email"
@@ -275,7 +291,10 @@
             />
 
             <!-- campo de comentarios -->
-            <label for="message">Mensaje:</label>
+            <div class="required">
+              <h5>*</h5>
+              <label for="message">Mensaje:</label>
+            </div>
             <textarea
               name="message"
               id="message"
@@ -284,18 +303,15 @@
               rows="5"
               maxlength="170"
             ></textarea>
-
-            <!-- opcion 1 para submit (enviar conjunto de datos) 
-              <input type="submit" value="ENVIAR!">-->
-
-            <!-- BOTONES -->
             <div class="button-container">
-              <!-- opcion 2 para submit es usar un botón (ventaja: innerHTML  ) -->
-              <button type="submit" class="button">ENVIAR!</button>
-              <!-- reset para borrarlo todo. CUIDADO! -->
+              <button type="submit" class="button">ENVIAR</button>
+
               <button type="reset" class="button">Borrar todo</button>
             </div>
-            <small>* datos requeridos</small>
+            <div class="required">
+              <h5>*</h5>
+              <small>datos requeridos</small>
+            </div>
           </form>
         </div>
         <div></div>

@@ -172,7 +172,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #fcfcfc;
-  font-size: clamp(30px, 6vw, 40px);
+  font-size: clamp(20px, 6vw, 40px);
   margin-left: 5%;
 }
 
@@ -308,7 +308,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   width: 100%;
 }
 .background-image-project {
@@ -320,7 +319,7 @@ body {
   padding: 40px 0px;
 }
 .title-project {
-  font-size: clamp(35px, 6vw, 80px);
+  font-size: clamp(30px, 6vw, 80px);
   text-align: center;
   color: rgb(138, 138, 138);
   padding-top: 10%;
@@ -563,6 +562,13 @@ body {
   border-radius: 15px;
   max-height: 90%;
 }
+.required {
+  display: flex;
+  align-items: center;
+}
+.required h5 {
+  color: #f082ac78;
+}
 .form-contact label {
   margin-top: 1%;
   margin-bottom: 1%;
@@ -714,6 +720,11 @@ body {
     justify-content: center;
     margin: 5%;
   } */
+
+  .background-image-project {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
   .project {
     display: inline-block;
   }
