@@ -525,23 +525,30 @@ body {
   font-size: 10px;
 }
 #contact {
-  background-color: rgba(138, 138, 138, 0.401);
   padding-top: 10vh;
   margin: 0;
-  padding-left: 3%;
+  padding-left: 0;
   scroll-margin-top: 70px;
+  color: rgb(138, 138, 138);
 }
 .form-container {
   display: flex;
-  background-color: rgba(138, 138, 138, 0.401);
+  background-image: url(img/fondoforms.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
 }
 .form-contact {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: rgba(138, 138, 138, 0.401);
-  padding: 5%;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.842);
+  padding: 0% 5% 4% 5%;
+  color: rgb(138, 138, 138);
   height: auto;
   margin: 2%;
   border-radius: 15px;
@@ -555,6 +562,7 @@ body {
   border-radius: 5px;
   margin-bottom: 3%;
   padding-left: 3%;
+  background-color: #f082ac78;
 }
 
 .form-contact textarea {
@@ -564,10 +572,12 @@ body {
   border-radius: 5px;
   padding-left: 3%;
   padding-top: 3%;
+  background-color: #f082ac78;
 }
 .form-contact button {
   height: 5vh;
   width: 15vw;
+  margin-bottom: 2%;
 }
 
 @media (width <= 768px) {
