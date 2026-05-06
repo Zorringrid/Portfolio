@@ -563,6 +563,7 @@ body {
   resize: vertical;
   border-radius: 5px;
   padding-left: 3%;
+  padding-top: 3%;
 }
 .form-contact button {
   height: 5vh;
@@ -716,6 +717,7 @@ body {
   .button {
     width: auto;
     margin-top: 5%;
+    font-size: clamp(5px, 4vw, 7px);
   }
   .button a {
     color: #ffffff;
