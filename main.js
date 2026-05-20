@@ -1,5 +1,13 @@
 const projects = [
   {
+    name: "Pagina de Cantantes POP",
+    link: "cantantes.html",
+    image: "img/pagcantantes.png",
+    alt: "pagina cantantes",
+    description:
+      "Sitio web multipágina creado con HTML y CSS que presenta a tres artistas: Justin Bieber, Miley Cyrus y Taylor Swift. Cada página incluye un banner con foto, nombre y redes sociales, una breve biografía, vídeos de YouTube y enlaces a sus álbumes en Spotify. La página principal muestra tarjetas interactivas de los artistas y listas de navegación, combinando estructura semántica, flexbox y diseño visual personalizado.",
+  },
+  {
     name: "Hotel Sol",
     link: "hotel-sol.html",
     image: "img/InicioHotel.png",
@@ -22,14 +30,6 @@ const projects = [
     alt: "imagen del juego",
     description:
       "Experiencia interactiva compuesta por varios minijuegos en 2D, 3D, AR y un modo VR desarrollado como proyecto académico para DAM. El jugador avanza de forma lineal por cada juego, acumulando puntos hasta llegar a la pantalla final. Incluye mecánicas táctiles, joystick virtual, detección por mirada en VR y escenarios diseñados en Unity.",
-  },
-  {
-    name: "Pagina de Cantantes POP",
-    link: "cantantes.html",
-    image: "img/pagcantantes.png",
-    alt: "pagina cantantes",
-    description:
-      "Sitio web multipágina creado con HTML y CSS que presenta a tres artistas: Justin Bieber, Miley Cyrus y Taylor Swift. Cada página incluye un banner con foto, nombre y redes sociales, una breve biografía, vídeos de YouTube y enlaces a sus álbumes en Spotify. La página principal muestra tarjetas interactivas de los artistas y listas de navegación, combinando estructura semántica, flexbox y diseño visual personalizado.",
   },
 ];
 const container = document.getElementById("project-container");
